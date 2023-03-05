@@ -17,6 +17,8 @@ body {
     padding: 10px 24px;
     border-radius: 20px;
     width: 500px;
+    position: relative;
+    transform: skewY(-375deg);
 
 }
 
@@ -50,7 +52,19 @@ select {
     padding: 0 1em;
     border-radius: 10px;
     border: none;
+
+
 }
+
+option {
+    position: relative;
+    transform: skewY(-375deg);
+}
+
+.RUB{
+    color:red;
+}
+
 
 input {
     width: 95%;
@@ -75,3 +89,26 @@ input {
     font-size: 1.3em;
     margin: 0.5em 0;
 }
+
+
+
+
+select::-webkit-scrollbar {
+    width: 21px;
+    /* ширина scrollbar */
+}
+
+select::-webkit-scrollbar-track {
+    background: orange;
+    /* цвет дорожки */
+}
+
+select::-webkit-scrollbar-thumb {
+    background-color: blue;
+    /* цвет плашки */
+    border-radius: 20px;
+    /* закругления плашки */
+    border: 3px solid orange;
+    /* padding вокруг плашки */
+}
+
